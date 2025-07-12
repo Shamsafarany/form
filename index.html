@@ -17,7 +17,7 @@
             id="username"
             name="username"
             placeholder="Choose a username"
-            required
+            aria-required="true"
           />
         </div>
         <div class="question">
@@ -27,7 +27,7 @@
             id="email"
             name="email"
             placeholder="Your email address"
-            required
+            aria-required="true"
           />
         </div>
 
@@ -37,9 +37,10 @@
             type="password"
             id="password"
             name="password"
-            placeholder="Create a password"
-            required
+            placeholder="xxxxxxxx"
+            aria-required="true"
           />
+          <img src="eye_535193.png" alt="Toggle Password Visibility" id="toggle-password" />
         </div>
         <div class="question">
           <label for="confirm-password">Confirm Password</label>
@@ -48,8 +49,9 @@
             id="confirm-password"
             name="confirm-password"
             placeholder="Re-enter your password"
-            required
+            aria-required="true"
           />
+          <img src="eye_535193.png" alt="Toggle Password Visibility" id="toggle-password" />
         </div>
 
         <button type="submit">Update Profile</button>
@@ -61,7 +63,13 @@
         </div>
       </div>
 
-      <div class="requirements"></div>
+      <div class="requirements">
+        <p id="item1">- Create Account</p>
+        <p id="item2">- Update Roadmap Progress</p>
+        <p id="item3">- Setup Public Profile</p>
+        <p id="item4">- Complete your first project</p>
+        <p id="item5">- Invite your friends</p>
+      </div>
     </div>
   </body>
 </html>

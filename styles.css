@@ -7,6 +7,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .container {
@@ -17,9 +18,12 @@ body{
     border: solid black;
     width: 60%;
     height: 50%;
-    display: flex;
-    gap: 20px;
     min-width: 650px;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px
 }
 
 form{
@@ -34,14 +38,14 @@ form{
     min-width: 300px;
     border-radius: 20px;
     background-color: #f9f9f9;
+    grid-row: 1/4;
 }
 
 input{
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
-    
+    font-size: 16px;    
 }
 input:focus{
     outline-color: #28a745;
@@ -54,6 +58,7 @@ label{
     display: flex;
     flex-direction: column;
     gap: 7px;
+    position: relative;
 }
 
 button{
@@ -73,7 +78,11 @@ button{
     height: 100px;
     position: relative;
     margin-left: 70px;
-}   
+}  
+.complete{
+    justify-self: center;
+    align-self: center;
+} 
 .percent{
     position:absolute;
     top:50%;
@@ -84,7 +93,25 @@ button{
 }
 
 .requirements {
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.343);
+    grid-row: 2/4;
+    border-radius: 20px;
     width: 70%;
-    height: 40%;
+    justify-self: flex-end;
+    padding: 20px;
+}
+
+#item1, #item2, #item3{
+    text-decoration: line-through;
+    color: gray
+}
+
+img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 75%;
+    transform: translateY(-50%);
 }
