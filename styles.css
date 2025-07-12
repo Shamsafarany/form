@@ -1,0 +1,90 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: solid black;
+    width: 60%;
+    height: 50%;
+    display: flex;
+    gap: 20px;
+    min-width: 650px;
+}
+
+form{
+    border: solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+    height: 90%;
+    padding: 25px;
+    max-width: 400px;
+    min-width: 300px;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    
+}
+input:focus{
+    outline-color: #28a745;
+}
+label{
+    font-size: 18px;
+}
+
+.question{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+button{
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.progress-bar {
+    border: 2px solid rgba(0, 0, 0, 0.219);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-left: 70px;
+}   
+.percent{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: #28a745;
+}
+
+.requirements {
+    background-color: gray;
+    width: 70%;
+    height: 40%;
+}
