@@ -17,10 +17,8 @@ body{
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border: solid black;
     width: 60%;
-    height: 50%;
     min-width: 650px;
     display: grid;
-
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 20px
@@ -32,7 +30,6 @@ form{
     flex-direction: column;
     gap: 20px;
     width: 40%;
-    height: 90%;
     padding: 25px;
     max-width: 400px;
     min-width: 300px;
@@ -114,4 +111,16 @@ img{
     right: 10px;
     top: 75%;
     transform: translateY(-50%);
+}
+
+input[aria-invalid="true"] {
+    outline-color: red;
+    background-color: #ffe6e6; 
+    border: solid red;
+    color: red;
+}
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
 }

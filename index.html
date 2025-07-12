@@ -18,6 +18,7 @@
             name="username"
             placeholder="Choose a username"
             aria-required="true"
+            aria-invalid="false"
           />
         </div>
         <div class="question">
@@ -28,7 +29,9 @@
             name="email"
             placeholder="Your email address"
             aria-required="true"
+            aria-invalid="true"
           />
+          <p class="error">Email invalid.</p>
         </div>
 
         <div class="question">
@@ -39,6 +42,7 @@
             name="password"
             placeholder="xxxxxxxx"
             aria-required="true"
+            aria-invalid="false"
           />
           <img src="eye_535193.png" alt="Toggle Password Visibility" id="toggle-password" />
         </div>
@@ -50,6 +54,7 @@
             name="confirm-password"
             placeholder="Re-enter your password"
             aria-required="true"
+            aria-invalid="false"
           />
           <img src="eye_535193.png" alt="Toggle Password Visibility" id="toggle-password" />
         </div>
